@@ -1,0 +1,1179 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Kaotic = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local password = Instance.new("TextButton")
+local tiddies = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local Frame3 = Instance.new("Frame")
+local DishWasher = Instance.new("TextButton")
+local CityHallManager = Instance.new("TextButton")
+local CityHallWorker = Instance.new("TextButton")
+local MotelManager = Instance.new("TextButton")
+local CarSalesman = Instance.new("TextButton")
+local Cashier = Instance.new("TextButton")
+local BankManager = Instance.new("TextButton")
+local SecurityGuard = Instance.new("TextButton")
+local Gardener = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Deposit = Instance.new("TextButton")
+local Withdraw = Instance.new("TextButton")
+local _100 = Instance.new("TextButton")
+local _1000 = Instance.new("TextButton")
+local _500 = Instance.new("TextButton")
+local _1000_2 = Instance.new("TextButton")
+local _100_2 = Instance.new("TextButton")
+local _500_2 = Instance.new("TextButton")
+local _5000 = Instance.new("TextButton")
+local _5000_2 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local page2 = Instance.new("TextButton")
+local StopFarm = Instance.new("TextButton")
+local Destroy = Instance.new("TextButton")
+local Frame4 = Instance.new("Frame")
+local LegalDealer = Instance.new("TextButton")
+local ArmorDealer = Instance.new("TextButton")
+local IllegalDealer = Instance.new("TextButton")
+local CarDealer = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local Page1 = Instance.new("TextButton")
+local Frame5 = Instance.new("Frame")
+local frameopen = Instance.new("TextButton")
+
+--Properties:
+
+Kaotic.Name = "Kaotic"
+Kaotic.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = Kaotic
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.429650575, 0, 0.420147419, 0)
+Frame.Size = UDim2.new(0, 230, 0, 130)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.Position = UDim2.new(0.0824205279, 0, 0.157218233, 0)
+TextBox.Size = UDim2.new(0, 192, 0, 50)
+TextBox.Font = Enum.Font.SpecialElite
+TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.PlaceholderText = "Password"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+password.Name = "password"
+password.Parent = Frame
+password.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+password.Position = UDim2.new(0.281837523, 0, 0.613485456, 0)
+password.Size = UDim2.new(0, 100, 0, 50)
+password.Style = Enum.ButtonStyle.RobloxButtonDefault
+password.Font = Enum.Font.SpecialElite
+password.Text = "Enter"
+password.TextColor3 = Color3.fromRGB(255, 0, 0)
+password.TextScaled = true
+password.TextSize = 14.000
+password.TextWrapped = true
+
+tiddies.Name = "tiddies"
+tiddies.Parent = Frame
+tiddies.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+tiddies.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tiddies.Position = UDim2.new(0.910000026, 0, 0.838461518, 0)
+tiddies.Size = UDim2.new(0, 19, 0, 20)
+tiddies.Font = Enum.Font.SourceSans
+tiddies.Text = ""
+tiddies.TextColor3 = Color3.fromRGB(0, 0, 0)
+tiddies.TextSize = 14.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = Kaotic
+Frame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame2.Position = UDim2.new(0.217186019, 0, 0.283292383, 0)
+Frame2.Size = UDim2.new(0, 570, 0, 380)
+Frame2.Visible = false
+
+ImageLabel.Parent = Frame2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.Position = UDim2.new(-0.000543855131, 0, 0, 0)
+ImageLabel.SelectionImageObject = Frame2
+ImageLabel.Size = UDim2.new(0, 570, 0, 379)
+ImageLabel.Image = "rbxassetid://5922975170"
+
+TextButton.Parent = Frame2
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.93508774, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 37, 0, 26)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+Frame3.Name = "Frame3"
+Frame3.Parent = Kaotic
+Frame3.Active = true
+Frame3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame3.Position = UDim2.new(0.329556167, 0, 0.242014721, 0)
+Frame3.Selectable = true
+Frame3.Size = UDim2.new(0, 441, 0, 453)
+Frame3.Visible = false
+
+DishWasher.Name = "Dish Washer"
+DishWasher.Parent = Frame3
+DishWasher.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DishWasher.Position = UDim2.new(0, 0, -0.00102564041, 0)
+DishWasher.Size = UDim2.new(0, 200, 0, 50)
+DishWasher.Style = Enum.ButtonStyle.RobloxButtonDefault
+DishWasher.Font = Enum.Font.SpecialElite
+DishWasher.Text = "Dish Washer (LVL 1)"
+DishWasher.TextColor3 = Color3.fromRGB(255, 255, 255)
+DishWasher.TextScaled = true
+DishWasher.TextSize = 14.000
+DishWasher.TextWrapped = true
+
+CityHallManager.Name = "City Hall Manager"
+CityHallManager.Parent = Frame3
+CityHallManager.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CityHallManager.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CityHallManager.Position = UDim2.new(0, 0, 0.444657832, 0)
+CityHallManager.Size = UDim2.new(0, 200, 0, 50)
+CityHallManager.Style = Enum.ButtonStyle.RobloxButtonDefault
+CityHallManager.Font = Enum.Font.SpecialElite
+CityHallManager.Text = "City Hall Manager (LVL 9)"
+CityHallManager.TextColor3 = Color3.fromRGB(255, 255, 255)
+CityHallManager.TextScaled = true
+CityHallManager.TextSize = 14.000
+CityHallManager.TextWrapped = true
+
+CityHallWorker.Name = "City Hall Worker"
+CityHallWorker.Parent = Frame3
+CityHallWorker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CityHallWorker.Position = UDim2.new(0.546485245, 0, 0.326482087, 0)
+CityHallWorker.Size = UDim2.new(0, 200, 0, 50)
+CityHallWorker.Style = Enum.ButtonStyle.RobloxButtonDefault
+CityHallWorker.Font = Enum.Font.SpecialElite
+CityHallWorker.Text = "City Hall Worker (LVL 8)"
+CityHallWorker.TextColor3 = Color3.fromRGB(255, 255, 255)
+CityHallWorker.TextScaled = true
+CityHallWorker.TextSize = 14.000
+CityHallWorker.TextWrapped = true
+
+MotelManager.Name = "Motel Manager"
+MotelManager.Parent = Frame3
+MotelManager.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MotelManager.Position = UDim2.new(0.546485245, 0, 0.219973147, 0)
+MotelManager.Size = UDim2.new(0, 200, 0, 50)
+MotelManager.Style = Enum.ButtonStyle.RobloxButtonDefault
+MotelManager.Font = Enum.Font.SpecialElite
+MotelManager.Text = "Motel Manager(LVL 6)"
+MotelManager.TextColor3 = Color3.fromRGB(255, 255, 255)
+MotelManager.TextScaled = true
+MotelManager.TextSize = 14.000
+MotelManager.TextWrapped = true
+
+CarSalesman.Name = "Car Salesman"
+CarSalesman.Parent = Frame3
+CarSalesman.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CarSalesman.Position = UDim2.new(0.546485245, 0, 0.108482838, 0)
+CarSalesman.Size = UDim2.new(0, 200, 0, 50)
+CarSalesman.Style = Enum.ButtonStyle.RobloxButtonDefault
+CarSalesman.Font = Enum.Font.SpecialElite
+CarSalesman.Text = "Car Salesman (LVL 4)"
+CarSalesman.TextColor3 = Color3.fromRGB(255, 255, 255)
+CarSalesman.TextScaled = true
+CarSalesman.TextSize = 14.000
+CarSalesman.TextWrapped = true
+
+Cashier.Name = "Cashier"
+Cashier.Parent = Frame3
+Cashier.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cashier.Position = UDim2.new(0.546485245, 0, -0.000799775124, 0)
+Cashier.Size = UDim2.new(0, 200, 0, 50)
+Cashier.Style = Enum.ButtonStyle.RobloxButtonDefault
+Cashier.Font = Enum.Font.SpecialElite
+Cashier.Text = "Cashier (LVL 2)"
+Cashier.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cashier.TextScaled = true
+Cashier.TextSize = 14.000
+Cashier.TextWrapped = true
+
+BankManager.Name = "Bank Manager"
+BankManager.Parent = Frame3
+BankManager.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BankManager.Position = UDim2.new(0, 0, 0.330551744, 0)
+BankManager.Size = UDim2.new(0, 200, 0, 50)
+BankManager.Style = Enum.ButtonStyle.RobloxButtonDefault
+BankManager.Font = Enum.Font.SpecialElite
+BankManager.Text = "Bank Manager (LVL 7)"
+BankManager.TextColor3 = Color3.fromRGB(255, 255, 255)
+BankManager.TextScaled = true
+BankManager.TextSize = 14.000
+BankManager.TextWrapped = true
+
+SecurityGuard.Name = "Security Guard"
+SecurityGuard.Parent = Frame3
+SecurityGuard.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SecurityGuard.Position = UDim2.new(0, 0, 0.218246266, 0)
+SecurityGuard.Size = UDim2.new(0, 200, 0, 50)
+SecurityGuard.Style = Enum.ButtonStyle.RobloxButtonDefault
+SecurityGuard.Font = Enum.Font.SpecialElite
+SecurityGuard.Text = "Security Guard (LVL 5)"
+SecurityGuard.TextColor3 = Color3.fromRGB(255, 255, 255)
+SecurityGuard.TextScaled = true
+SecurityGuard.TextSize = 14.000
+SecurityGuard.TextWrapped = true
+
+Gardener.Name = "Gardener"
+Gardener.Parent = Frame3
+Gardener.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gardener.Position = UDim2.new(0, 0, 0.108148359, 0)
+Gardener.Size = UDim2.new(0, 200, 0, 50)
+Gardener.Style = Enum.ButtonStyle.RobloxButtonDefault
+Gardener.Font = Enum.Font.SpecialElite
+Gardener.Text = "Gardener (LVL 3)"
+Gardener.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gardener.TextScaled = true
+Gardener.TextSize = 14.000
+Gardener.TextWrapped = true
+
+TextLabel.Parent = Frame3
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0, 0, -0.0684326738, 0)
+TextLabel.Size = UDim2.new(0, 441, 0, 30)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Frame3
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.Position = UDim2.new(0, 0, -0.0684326738, 0)
+TextLabel_2.Size = UDim2.new(0, 441, 0, 30)
+TextLabel_2.Font = Enum.Font.SpecialElite
+TextLabel_2.Text = "AutoFamer"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.Position = UDim2.new(0, 0, 0.554083884, 0)
+TextLabel_3.Size = UDim2.new(0, 441, 0, 30)
+TextLabel_3.Font = Enum.Font.SpecialElite
+TextLabel_3.Text = "Bank"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Deposit.Name = "Deposit"
+Deposit.Parent = Frame3
+Deposit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Deposit.Position = UDim2.new(0, 0, 0.619283438, 0)
+Deposit.Size = UDim2.new(0, 200, 0, 50)
+Deposit.Style = Enum.ButtonStyle.RobloxButtonDefault
+Deposit.Font = Enum.Font.SpecialElite
+Deposit.Text = "Deposit"
+Deposit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Deposit.TextScaled = true
+Deposit.TextSize = 14.000
+Deposit.TextWrapped = true
+
+Withdraw.Name = "Withdraw"
+Withdraw.Parent = Frame3
+Withdraw.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Withdraw.Position = UDim2.new(0.546485245, 0, 0.619283438, 0)
+Withdraw.Size = UDim2.new(0, 200, 0, 50)
+Withdraw.Style = Enum.ButtonStyle.RobloxButtonDefault
+Withdraw.Font = Enum.Font.SpecialElite
+Withdraw.Text = "Withdraw"
+Withdraw.TextColor3 = Color3.fromRGB(255, 255, 255)
+Withdraw.TextScaled = true
+Withdraw.TextSize = 14.000
+Withdraw.TextWrapped = true
+
+_100.Name = "$100"
+_100.Parent = Frame3
+_100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100.Position = UDim2.new(0.0634920672, 0, 0.729658723, 0)
+_100.Size = UDim2.new(0, 143, 0, 32)
+_100.Style = Enum.ButtonStyle.RobloxButtonDefault
+_100.Font = Enum.Font.SpecialElite
+_100.Text = "$100"
+_100.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100.TextSize = 14.000
+_100.TextWrapped = true
+
+_1000.Name = "$1000"
+_1000.Parent = Frame3
+_1000.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1000.Position = UDim2.new(0.0634920672, 0, 0.870939076, 0)
+_1000.Size = UDim2.new(0, 143, 0, 32)
+_1000.Style = Enum.ButtonStyle.RobloxButtonDefault
+_1000.Font = Enum.Font.SpecialElite
+_1000.Text = "$1000"
+_1000.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1000.TextSize = 14.000
+_1000.TextWrapped = true
+
+_500.Name = "$500"
+_500.Parent = Frame3
+_500.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_500.Position = UDim2.new(0.0634920672, 0, 0.800298929, 0)
+_500.Size = UDim2.new(0, 143, 0, 32)
+_500.Style = Enum.ButtonStyle.RobloxButtonDefault
+_500.Font = Enum.Font.SpecialElite
+_500.Text = "$500"
+_500.TextColor3 = Color3.fromRGB(255, 255, 255)
+_500.TextSize = 14.000
+_500.TextWrapped = true
+
+_1000_2.Name = "$1000"
+_1000_2.Parent = Frame3
+_1000_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1000_2.Position = UDim2.new(0.609977305, 0, 0.870939076, 0)
+_1000_2.Size = UDim2.new(0, 143, 0, 32)
+_1000_2.Style = Enum.ButtonStyle.RobloxButtonDefault
+_1000_2.Font = Enum.Font.SpecialElite
+_1000_2.Text = "$1000"
+_1000_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1000_2.TextSize = 14.000
+_1000_2.TextWrapped = true
+
+_100_2.Name = "$100"
+_100_2.Parent = Frame3
+_100_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100_2.Position = UDim2.new(0.609977305, 0, 0.729658723, 0)
+_100_2.Size = UDim2.new(0, 143, 0, 32)
+_100_2.Style = Enum.ButtonStyle.RobloxButtonDefault
+_100_2.Font = Enum.Font.SpecialElite
+_100_2.Text = "$100"
+_100_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_100_2.TextSize = 14.000
+_100_2.TextWrapped = true
+
+_500_2.Name = "$500"
+_500_2.Parent = Frame3
+_500_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_500_2.Position = UDim2.new(0.609977305, 0, 0.800298929, 0)
+_500_2.Size = UDim2.new(0, 143, 0, 32)
+_500_2.Style = Enum.ButtonStyle.RobloxButtonDefault
+_500_2.Font = Enum.Font.SpecialElite
+_500_2.Text = "$500"
+_500_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_500_2.TextSize = 14.000
+_500_2.TextWrapped = true
+
+_5000.Name = "$5000"
+_5000.Parent = Frame3
+_5000.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_5000.Position = UDim2.new(0.0634920672, 0, 0.941579223, 0)
+_5000.Size = UDim2.new(0, 143, 0, 26)
+_5000.Style = Enum.ButtonStyle.RobloxButtonDefault
+_5000.Font = Enum.Font.SpecialElite
+_5000.Text = "$5000"
+_5000.TextColor3 = Color3.fromRGB(255, 255, 255)
+_5000.TextSize = 14.000
+_5000.TextWrapped = true
+
+_5000_2.Name = "$5000"
+_5000_2.Parent = Frame3
+_5000_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_5000_2.Position = UDim2.new(0.609977305, 0, 0.941579223, 0)
+_5000_2.Size = UDim2.new(0, 143, 0, 26)
+_5000_2.Style = Enum.ButtonStyle.RobloxButtonDefault
+_5000_2.Font = Enum.Font.SpecialElite
+_5000_2.Text = "$5000"
+_5000_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_5000_2.TextSize = 14.000
+_5000_2.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Frame3
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.Position = UDim2.new(0, 0, -0.0684326738, 0)
+Close.Size = UDim2.new(0, 41, 0, 19)
+Close.Style = Enum.ButtonStyle.RobloxButtonDefault
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 42, 0)
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+page2.Name = "page 2"
+page2.Parent = Frame3
+page2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+page2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+page2.Position = UDim2.new(0.90702945, 0, -0.0684326738, 0)
+page2.Size = UDim2.new(0, 41, 0, 19)
+page2.Style = Enum.ButtonStyle.RobloxButtonDefault
+page2.Font = Enum.Font.SourceSans
+page2.Text = "-->"
+page2.TextColor3 = Color3.fromRGB(255, 42, 0)
+page2.TextSize = 14.000
+page2.TextWrapped = true
+
+StopFarm.Name = "Stop Farm"
+StopFarm.Parent = Frame3
+StopFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StopFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StopFarm.Position = UDim2.new(0.546485245, 0, 0.444657832, 0)
+StopFarm.Size = UDim2.new(0, 200, 0, 50)
+StopFarm.Style = Enum.ButtonStyle.RobloxButtonDefault
+StopFarm.Font = Enum.Font.SpecialElite
+StopFarm.Text = "Stop Farm"
+StopFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopFarm.TextScaled = true
+StopFarm.TextSize = 14.000
+StopFarm.TextWrapped = true
+
+Destroy.Name = "Destroy"
+Destroy.Parent = Frame3
+Destroy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Destroy.Position = UDim2.new(0.140589565, 0, -0.0596026517, 0)
+Destroy.Size = UDim2.new(0, 62, 0, 11)
+Destroy.Style = Enum.ButtonStyle.RobloxButtonDefault
+Destroy.Font = Enum.Font.SourceSansSemibold
+Destroy.Text = "DESTROY"
+Destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Destroy.TextSize = 14.000
+
+Frame4.Name = "Frame4"
+Frame4.Parent = Kaotic
+Frame4.Active = true
+Frame4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame4.Position = UDim2.new(0.328885734, 0, 0.241999999, 0)
+Frame4.Size = UDim2.new(0, 441, 0, 453)
+Frame4.Visible = false
+
+LegalDealer.Name = "Legal Dealer"
+LegalDealer.Parent = Frame4
+LegalDealer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegalDealer.Position = UDim2.new(0, 0, -0.00102564041, 0)
+LegalDealer.Size = UDim2.new(0, 200, 0, 50)
+LegalDealer.Style = Enum.ButtonStyle.RobloxButtonDefault
+LegalDealer.Font = Enum.Font.SourceSans
+LegalDealer.Text = "Legal Dealer"
+LegalDealer.TextColor3 = Color3.fromRGB(255, 255, 255)
+LegalDealer.TextScaled = true
+LegalDealer.TextSize = 14.000
+LegalDealer.TextWrapped = true
+
+ArmorDealer.Name = "Armor Dealer"
+ArmorDealer.Parent = Frame4
+ArmorDealer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ArmorDealer.Position = UDim2.new(0.546485245, 0, 0.108482838, 0)
+ArmorDealer.Size = UDim2.new(0, 200, 0, 50)
+ArmorDealer.Style = Enum.ButtonStyle.RobloxButtonDefault
+ArmorDealer.Font = Enum.Font.SourceSans
+ArmorDealer.Text = "Armor Dealer"
+ArmorDealer.TextColor3 = Color3.fromRGB(255, 255, 255)
+ArmorDealer.TextScaled = true
+ArmorDealer.TextSize = 14.000
+ArmorDealer.TextWrapped = true
+
+IllegalDealer.Name = "Illegal Dealer"
+IllegalDealer.Parent = Frame4
+IllegalDealer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IllegalDealer.Position = UDim2.new(0.546485245, 0, -0.000799775124, 0)
+IllegalDealer.Size = UDim2.new(0, 200, 0, 50)
+IllegalDealer.Style = Enum.ButtonStyle.RobloxButtonDefault
+IllegalDealer.Font = Enum.Font.SourceSans
+IllegalDealer.Text = "illegal Dealer"
+IllegalDealer.TextColor3 = Color3.fromRGB(255, 255, 255)
+IllegalDealer.TextScaled = true
+IllegalDealer.TextSize = 14.000
+IllegalDealer.TextWrapped = true
+
+CarDealer.Name = "Car Dealer"
+CarDealer.Parent = Frame4
+CarDealer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CarDealer.Position = UDim2.new(0, 0, 0.108148359, 0)
+CarDealer.Size = UDim2.new(0, 200, 0, 50)
+CarDealer.Style = Enum.ButtonStyle.RobloxButtonDefault
+CarDealer.Font = Enum.Font.SourceSans
+CarDealer.Text = "Car Dealer"
+CarDealer.TextColor3 = Color3.fromRGB(255, 255, 255)
+CarDealer.TextScaled = true
+CarDealer.TextSize = 14.000
+CarDealer.TextWrapped = true
+
+TextLabel_4.Parent = Frame4
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Position = UDim2.new(0, 0, -0.0684326738, 0)
+TextLabel_4.Size = UDim2.new(0, 441, 0, 30)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+TextLabel_5.Parent = Frame4
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.Position = UDim2.new(0, 0, -0.0684326738, 0)
+TextLabel_5.Size = UDim2.new(0, 441, 0, 30)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Teleports"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Frame4
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.Position = UDim2.new(0, 0, 0.933774829, 0)
+TextLabel_6.Size = UDim2.new(0, 441, 0, 30)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Page 2"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+Page1.Name = "Page 1"
+Page1.Parent = Frame4
+Page1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Page1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Page1.Position = UDim2.new(0, 0, -0.0684326738, 0)
+Page1.Size = UDim2.new(0, 41, 0, 19)
+Page1.Style = Enum.ButtonStyle.RobloxButtonDefault
+Page1.Font = Enum.Font.SourceSans
+Page1.Text = "<--"
+Page1.TextColor3 = Color3.fromRGB(255, 42, 0)
+Page1.TextSize = 14.000
+Page1.TextWrapped = true
+
+Frame5.Name = "Frame5"
+Frame5.Parent = Kaotic
+Frame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame5.Position = UDim2.new(0.0132200196, 0, 0.533042252, 0)
+Frame5.Size = UDim2.new(0, 47, 0, 17)
+Frame5.Visible = false
+
+frameopen.Name = "frameopen"
+frameopen.Parent = Frame5
+frameopen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+frameopen.Position = UDim2.new(-0.306663662, 0, -0.396976054, 0)
+frameopen.Size = UDim2.new(0, 98, 0, 50)
+frameopen.Style = Enum.ButtonStyle.RobloxButtonDefault
+frameopen.Font = Enum.Font.SpecialElite
+frameopen.Text = "OPEN"
+frameopen.TextColor3 = Color3.fromRGB(255, 255, 255)
+frameopen.TextSize = 14.000
+
+-- Scripts:
+
+local function SVTYEVL_fake_script() -- password.LocalScript 
+	local script = Instance.new('LocalScript', password)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.TextBox.Text == "kaotic" then 
+			game.Players.LocalPlayer.PlayerGui.Kaotic.Frame3.Visible = true
+			game.Players.LocalPlayer.PlayerGui.Kaotic.Frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(SVTYEVL_fake_script)()
+local function AZXN_fake_script() -- tiddies.LocalScript 
+	local script = Instance.new('LocalScript', tiddies)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame2.Visible = true
+	end)
+end
+coroutine.wrap(AZXN_fake_script)()
+local function PLXTLUA_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(PLXTLUA_fake_script)()
+local function CJKTSXR_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame2.Visible = false
+	end)
+end
+coroutine.wrap(CJKTSXR_fake_script)()
+local function UPHF_fake_script() -- DishWasher.LocalScript 
+	local script = Instance.new('LocalScript', DishWasher)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+	
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "Dish Washer",
+			[3] = "Dish Washer3"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "Dish Washer",
+				[3] = "Dish Washer3"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	wait(60)
+		local args = {
+			[1] = "Deposit",
+			[2] = 25
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	end
+	
+	end)
+end
+coroutine.wrap(UPHF_fake_script)()
+local function WUAAJI_fake_script() -- CityHallManager.LocalScript 
+	local script = Instance.new('LocalScript', CityHallManager)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "City Hall Manager",
+			[3] = "City Hall Manager1"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "City Hall Manager",
+				[3] = "City Hall Manager1"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+	
+			wait(60)
+			local args = {
+				[1] = "Deposit",
+				[2] = 800
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(WUAAJI_fake_script)()
+local function UKUZNTA_fake_script() -- CityHallWorker.LocalScript 
+	local script = Instance.new('LocalScript', CityHallWorker)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "City Hall Worker",
+			[3] = "City Hall Worker1"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "City Hall Worker",
+				[3] = "City Hall Worker1"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+	
+	
+			wait(60)
+			local args = {
+				[1] = "Deposit",
+				[2] = 650
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(UKUZNTA_fake_script)()
+local function NKFTRGV_fake_script() -- MotelManager.LocalScript 
+	local script = Instance.new('LocalScript', MotelManager)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "Motel Manager",
+			[3] = "Motel Manager1"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+	
+	
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "Motel Manager",
+				[3] = "Motel Manager1"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+			wait(60)
+			local args = {
+				[1] = "Deposit",
+				[2] = 350
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(NKFTRGV_fake_script)()
+local function WEQQTO_fake_script() -- CarSalesman.LocalScript 
+	local script = Instance.new('LocalScript', CarSalesman)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "Car Salesman",
+			[3] = "Car Salesman1"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "Car Salesman",
+				[3] = "Car Salesman1"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+			wait(60)
+			local args = {
+				[1] = "Deposit",
+				[2] = 120
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(WEQQTO_fake_script)()
+local function CNMQPI_fake_script() -- Cashier.LocalScript 
+	local script = Instance.new('LocalScript', Cashier)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "Cashier",
+			[3] = "Cashier2"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "Cashier",
+				[3] = "Cashier2"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+			wait(60)
+			wait(0.5)
+			local args = {
+				[1] = "Deposit",
+				[2] = 45
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(CNMQPI_fake_script)()
+local function NXTNZF_fake_script() -- BankManager.LocalScript 
+	local script = Instance.new('LocalScript', BankManager)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "Bank Manager",
+			[3] = "Bank Manager1"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "Bank Manager",
+				[3] = "Bank Manager1"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+			wait(60)
+			local args = {
+				[1] = "Deposit",
+				[2] = 500
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(NXTNZF_fake_script)()
+local function GTWI_fake_script() -- SecurityGuard.LocalScript 
+	local script = Instance.new('LocalScript', SecurityGuard)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "Security Guard",
+			[3] = "Security Guard1"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "Security Guard",
+				[3] = "Security Guard1"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+			wait(60)
+			local args = {
+				[1] = "Deposit",
+				[2] = 200
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(GTWI_fake_script)()
+local function GSFUBAX_fake_script() -- Gardener.LocalScript 
+	local script = Instance.new('LocalScript', Gardener)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "Gardener",
+			[3] = "Gardener1"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = "StartWork",
+				[2] = "Gardener",
+				[3] = "Gardener1"
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+			wait(60)
+			local args = {
+				[1] = "Deposit",
+				[2] = 70
+			}
+	
+			game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(GSFUBAX_fake_script)()
+local function SLUAFKU_fake_script() -- _100.LocalScript 
+	local script = Instance.new('LocalScript', _100)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Deposit",
+			[2] = 100
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(SLUAFKU_fake_script)()
+local function EJJEBUK_fake_script() -- _1000.LocalScript 
+	local script = Instance.new('LocalScript', _1000)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Deposit",
+			[2] = 1000
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(EJJEBUK_fake_script)()
+local function RQMXJ_fake_script() -- _500.LocalScript 
+	local script = Instance.new('LocalScript', _500)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Deposit",
+			[2] = 500
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(RQMXJ_fake_script)()
+local function NQNE_fake_script() -- _1000_2.LocalScript 
+	local script = Instance.new('LocalScript', _1000_2)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Withdraw",
+			[2] = 1000
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(NQNE_fake_script)()
+local function UZJJ_fake_script() -- _100_2.LocalScript 
+	local script = Instance.new('LocalScript', _100_2)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Withdraw",
+			[2] = 100
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(UZJJ_fake_script)()
+local function RDGQCU_fake_script() -- _500_2.LocalScript 
+	local script = Instance.new('LocalScript', _500_2)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Withdraw",
+			[2] = 500
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(RDGQCU_fake_script)()
+local function FXGBNG_fake_script() -- _5000.LocalScript 
+	local script = Instance.new('LocalScript', _5000)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Deposit",
+			[2] = 5000
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	
+	end)
+end
+coroutine.wrap(FXGBNG_fake_script)()
+local function KMXQXCN_fake_script() -- _5000_2.LocalScript 
+	local script = Instance.new('LocalScript', _5000_2)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "Withdraw",
+			[2] = 5000
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(KMXQXCN_fake_script)()
+local function QDKBRAF_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame3.Visible = false
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame5.Visible = true
+	end)
+end
+coroutine.wrap(QDKBRAF_fake_script)()
+local function HLJZN_fake_script() -- page2.LocalScript 
+	local script = Instance.new('LocalScript', page2)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame4.Visible = true
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame3.Visible = false
+	end)
+end
+coroutine.wrap(HLJZN_fake_script)()
+local function HGNJW_fake_script() -- StopFarm.LocalScript 
+	local script = Instance.new('LocalScript', StopFarm)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "ChangeJob",
+			[2] = "Dish Washer",
+			[3] = "Dish Washer3"
+		}
+	
+		game:GetService("ReplicatedStorage").InvokeHandler:InvokeServer(unpack(args))
+	end)
+end
+coroutine.wrap(HGNJW_fake_script)()
+local function FKZO_fake_script() -- Destroy.LocalScript 
+	local script = Instance.new('LocalScript', Destroy)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.PlayerGui.Kaotic:Destroy()
+	end)
+end
+coroutine.wrap(FKZO_fake_script)()
+local function QPIPMIT_fake_script() -- LegalDealer.LocalScript 
+	local script = Instance.new('LocalScript', LegalDealer)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(351.321045, 148.810822, -464.28717)
+	end)
+end
+coroutine.wrap(QPIPMIT_fake_script)()
+local function JMTH_fake_script() -- ArmorDealer.LocalScript 
+	local script = Instance.new('LocalScript', ArmorDealer)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1345.9646, 148.420029, -351.394257)
+	end)
+end
+coroutine.wrap(JMTH_fake_script)()
+local function LUFU_fake_script() -- IllegalDealer.LocalScript 
+	local script = Instance.new('LocalScript', IllegalDealer)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(234.029114, 148.892441, -105.184387)
+	end)
+end
+coroutine.wrap(LUFU_fake_script)()
+local function LHFFKIE_fake_script() -- CarDealer.LocalScript 
+	local script = Instance.new('LocalScript', CarDealer)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-228.901001, 148.834396, -206.17186)
+	end)
+end
+coroutine.wrap(LHFFKIE_fake_script)()
+local function LDUNQH_fake_script() -- Page1.LocalScript 
+	local script = Instance.new('LocalScript', Page1)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame3.Visible = true
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame4.Visible = false
+	end)
+end
+coroutine.wrap(LDUNQH_fake_script)()
+local function WCGXHVA_fake_script() -- frameopen.LocalScript 
+	local script = Instance.new('LocalScript', frameopen)
+
+	local parent = script.Parent
+	parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame3.Visible = true
+		game.Players.LocalPlayer.PlayerGui.Kaotic.Frame5.Visible = false
+	
+	end)
+end
+coroutine.wrap(WCGXHVA_fake_script)()
